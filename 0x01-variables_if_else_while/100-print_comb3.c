@@ -7,16 +7,21 @@
  */
 int main(void)
 {
-	int i;
-
-	for (i = 0; i < 100 ; i++)
+	int x, y;
+	for (x = '0'; x <= '9'; x++)
 	{
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
-		if (i < 100)
+		for (y = '1'; y <= '9'; y++)
 		{
-		putchar(',');
-		putchar(' ');
+			if (x == '0' || (x != y && x < y))
+			{
+				putchar(x);
+				putchar(y);
+				if (x != '8')
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
 	}
 	putchar('\n');
