@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isdigit - check for alphabet.
+ * _isalpha - check for alphabet.
  * @c: variable
  *
  * Return: Always 0.
