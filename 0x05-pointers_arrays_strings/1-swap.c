@@ -5,6 +5,8 @@
  * and updates the value it points to to 98
  * @a: pointer to an integer
  * @b: pointer to an integer
+ * @a: variable
+ * @b: variable
  */
 void swap_int(int *a, int *b)
 {
