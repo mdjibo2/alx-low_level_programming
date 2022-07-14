@@ -3,17 +3,22 @@
 /**
  * _strlen -  returns the length of a string
  * @s: pointer to a char
+ * @str: pointer to char
+ *
  * Return : always 0.
  */
 int _strlen(char *s)
 {
-	char *s[100] = {"My first strlen!"};
-	int i,totChar;
-	totChar=0;
+	char *str = "Hello";
+	int len;
+	char *s = str;
 
-	for(i=0; s[i] != '\0'; i++)
+	while(*s != '\0')
 	{
-		totChar++;
-	}
-	return (0);
+		s++;
+
+	
+        }
+	len = s - str;
+	return(0);
 }
