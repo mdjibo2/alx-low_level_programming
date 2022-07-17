@@ -1,30 +1,27 @@
 #include "main.h"
 
 /**
- * _isupper - evalue if letter is uppercase .
- *@c: print int
- * Return: Always 0.
+ * _strcat - appends the src string to the dest string,
+ * overwriting the terminating null byte (\0) at the end of dest,
+ * and then adds a terminating null byte
+ *@dest: destination string
+ *@src: source string
+ *Return: The value to the pointer dest
  */
 char *_strcat(char *dest, char *src)
 {
-	char string1[40] = "Hello ";
-	char string2[20] = "Wordl!\n";
-	int i=0,j=0;
+	int i = 0, j = 0;
 
-	dest=string1;
-	src=string2;
-
-	while(string1[i]!='\0')
+	while (dest[i] != '\0')
 	{
-	++dest;
 	i++;
 	}
-	while(string2[j]!='\0')
+	while (src[j] != '\0')
 	{
-		*dest=*src;
-		dest++;
-		src++;
+		dest[i] = src[j];
+		i++;
 		j++;
 	}
-	return (dest); 
+	dest[i] = '\0';
+	return (dest);
 }
