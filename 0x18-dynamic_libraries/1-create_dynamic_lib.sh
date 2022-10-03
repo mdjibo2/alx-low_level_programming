@@ -1,5 +1,5 @@
 #!/bin/bash
 gcc -c -fPIC *.c
-gcc -shared -o libdynamic.so *.o
-export LD_LIBRARY_PATH=.:
+gcc -shared -o liball.so *.o
+export LD_LIBRARY_PATH=pwd
 $LD_LIBRARY_PATH
